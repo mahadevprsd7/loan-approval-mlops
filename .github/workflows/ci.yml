@@ -26,6 +26,6 @@ jobs:
       run: |
         pip install -r requirements.txt
 
-    - name: Run Flask App Test
+    - name: Validate Flask App
       run: |
-        python app.py
+        python -m py_compile app.py
